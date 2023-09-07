@@ -1,0 +1,51 @@
+body{
+    background-color: white;
+    font-family: Arial;
+}
+
+h1{
+    color: black;
+    font-family: Arial;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+}
+
+a{
+    color: crimson;
+}
+
+h3{
+    font-weight: bold;
+    font-style: italic;
+    color: aqua;
+}
+
+ul{
+    color:blue;
+}
+
+ol{
+    color:blue;
+}
+
+.top{
+    background-color: #73BEB0;
+    max-width: 1000px;
+    padding-left: 10px;
+    height: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
+
+.middle{
+    background-color: white;
+    border: 1px solid;
+    border-color: #73BEB0;
+    max-width: 998px;
+    padding-left: 10px;
+}
