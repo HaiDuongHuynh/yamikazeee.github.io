@@ -41,6 +41,82 @@
         </tr>
     </table>
     <h3>Your Shopping Cart</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Node.js</td>
+            <td>9.99</td>
+            <td>9.99</td>
+            <td id="increment1">
+                <button class="button2" onclick="decrement1()">-</button>
+                <p id="counting1"></p>
+                <button class="button2" onclick="increment1()">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>React</td>
+            <td>29.99</td>
+            <td>290.99</td>
+            <td id="increment">
+                <button class="button2" onclick="decrement()">-</button>
+                <p id="counting"></p>
+                <button class="button2" onclick="increment()">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="result" colspan="4">Total: 300.98</td>
+        </tr>
+    </table>
+
+    <button class="button3 tar" >Place Order</button>
+    <script>
+        //initialising a variable name data
+
+        let data = 0;
+
+        //printing default value of data that is 0 in h2 tag
+        document.getElementById("counting").innerText = data;
+
+        //creation of increment function
+        function increment() {
+            data = data + 1;
+            document.getElementById("counting").innerText = data;
+        }
+        //creation of decrement function
+        function decrement() {
+            if(data > 0) {
+                data = data - 1;
+                document.getElementById("counting").innerText = data;
+            }
+        }
+    </script>
+
+    <script>
+        //initialising a variable name data
+
+        let data1 = 0;
+
+        //printing default value of data that is 0 in h2 tag
+        document.getElementById("counting1").innerText = data1;
+
+        //creation of increment function
+        function increment1() {
+            data1 = data1 + 1;
+            document.getElementById("counting1").innerText = data1;
+        }
+        //creation of decrement function
+        function decrement1() {
+            if(data1 > 0) {
+                data1 = data1 - 1;
+                document.getElementById("counting1").innerText = data1;
+            }
+        }
+    </script>
 </div>
 
 </body>
