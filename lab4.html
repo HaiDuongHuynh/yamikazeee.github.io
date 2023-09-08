@@ -10,7 +10,65 @@
         <p>Workshop Registration</p>
     </div>
     <div class="middle">
-        <h6>Register now while seats are available!</h6>
+
+        <div class="column">
+            <h5>Register now while seats are available!</h5>
+        <label for="fname">First Name: </label><input type="text" name="fname">
+        <p></p>
+        <label for="lname">Last Name: </label><input type="text" name="lname">
+        <p></p>
+        <label for="company">Company/Institution: </label><input type="text" name="company">
+        <p></p>
+        <label for="address">Address: </label><textarea rows="5" cols="21"></textarea>
+        <p></p>
+        <label for="city">City: </label><input type="text" name="city">
+        <p></p>
+        <label for="state">State/Province/Region: </label>
+        <select name="state" id="state">
+            <option>-Select-</option>
+            <option>Iowa</option>
+            <option>Texas</option>
+            <option>Florida</option>
+        </select>
+        <p></p>
+        <label for="state">Country: </label>
+        <select name="country" id="country">
+            <option>-Select-</option>
+            <option>Japan</option>
+            <option>Vietnam</option>
+            <option>United States</option>
+        </select>
+        <p></p>
+        <label for="email">Email: </label><input type="text" name="email">
+        <p></p>
+        <label for="phone">Phone Number: </label><input type="text" name="phone">
+            <p></p>
+        </div>
+
+        <div class="column">
+            <h5>Lunch</h5>
+            <label for="meal">Meal Preference: </label>
+            <select name="meal" id="meal">
+                <option>Vegeterian</option>
+                <option>Meat</option>
+                <option>Vegan</option>
+            </select>
+            <h5>Payment detail</h5>
+            <label for="payment">Payment mode: </label>
+            <div class="item"><input type="checkbox" class="get-inline" name="payment" value="cash"/> Cash</div>
+            <div class="item"><input type="checkbox" class="get-inline" name="cheque" value="cheque"/> Cheque</div>
+            <div class="item"><input type="checkbox" class="get-inline" name="draft" value="draft"/> Demand Draft</div>
+            <label for="ddno">DD/Cheque No.: </label><input type="text" name="ddno">
+            <p></p>
+            <label for="bankName">Drawn On (Bank name): </label><input type="text" name="bankName">
+            <p></p>
+            <label for="payAt">Payable at: </label><input type="text" name="payAt">
+        </div>
+
+    </div>
+    <div class="bottom">
+        <button>Submit</button>
+        <button>Reset</button>
     </div>
 
 

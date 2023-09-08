@@ -48,4 +48,73 @@ ol{
     border-color: #73BEB0;
     max-width: 998px;
     padding-left: 10px;
+    display: flex;
+}
+
+label{
+    display:inline-block;
+    width: 100px;
+    margin-right: 50px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+}
+
+#state{
+    width: 175px;
+}
+
+#country{
+    width: 175px;
+}
+
+#meal{
+    width: 175px;
+}
+
+h5{
+    text-decoration: underline ;
+}
+
+
+.column {
+    flex: 50%;
+}
+
+.get-inline{
+    display:block;
+}
+
+input[type="checkbox"]{
+    display: inline;
+}
+
+.item{
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+}
+
+.bottom{
+    background-color: #ececec;
+    border: 1px solid;
+    border-color: #73BEB0;
+    max-width: 988px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #73BEB0;
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
