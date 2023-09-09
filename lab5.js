@@ -21,4 +21,4 @@ const getNewArray = function (strArray) {
 
 const words = ["apple", "banana", "cherry", "grape", "apricot"];
 const filteredWords = getNewArray(words);
-console.log(filteredWords); // Output: ["apple", "apricot"]
+console.log(filteredWords);
