@@ -1,15 +1,14 @@
 // Question 1
 const student = {
-firstName: '',
-lastName: '',
-grades: [],
-inputNewGrade: function (newGrade) {
-this.grades.push(newGrade);
-},
-computeAverageGrade() {
-return this.grades.reduce((sum, current, index, array) => sum + curre
-nt / array.length, 0);
-}
+ firstName: '',
+ lastName: '',
+ grades: [],
+ inputNewGrade: function (newGrade) {
+  this.grades.push(newGrade);
+ },
+ computeAverageGrade() {
+  return this.grades.reduce((sum, current, index, array) => sum + current / array.length, 0);
+ }
 }
 const stu1 = Object.create(student);
 stu1.firstName = 'Hai';
@@ -42,7 +41,7 @@ Student.prototype.inputNewGrade = function (newGrade) {
 }
 Student.prototype.computeAverageGrade = function () {
  return this.grades.reduce((sum, current, index, array) => sum + current /
-array.length, 0);
+     array.length, 0);
 }
 const stu1 = Object.create(student);
 stu1.firstName = 'Hai';
@@ -69,13 +68,13 @@ Array.prototype.mysort = function () {
  let arr = this;
  let len = arr.length;
  for (let i = len - 1; i >= 0; i--) {
- for (let j = 1; j <= i; j++) {
- if (arr[j - 1] > arr[j]) {
- let temp = arr[j - 1];
- arr[j - 1] = arr[j];
- arr[j] = temp;
- }
- }
+  for (let j = 1; j <= i; j++) {
+   if (arr[j - 1] > arr[j]) {
+    let temp = arr[j - 1];
+    arr[j - 1] = arr[j];
+    arr[j] = temp;
+   }
+  }
  }
  return arr;
 }
@@ -88,38 +87,38 @@ function LinkedList(){
 }
 LinkedList.prototype.add = function(element) {
  if (this.value === undefined) {
- this.value = element;
- this.next = null;
+  this.value = element;
+  this.next = null;
  } else {
- let current = this;
- while (current.next) {
- current = current.next;
- }
- current.next = { value: element, next: null };
+  let current = this;
+  while (current.next) {
+   current = current.next;
+  }
+  current.next = { value: element, next: null };
  }
 }
 LinkedList.prototype.remove = function(element) {
  var current = this;
  var prev = null;
  while (current) {
- if (current.value === element) {
- if (prev == null) {
- this.value = current.next.value;
- this.next = current.next.next;
- } else {
- prev.next = current.next;
- }
- return true;
- }
- prev = current;
- current = current.next;
+  if (current.value === element) {
+   if (prev == null) {
+    this.value = current.next.value;
+    this.next = current.next.next;
+   } else {
+    prev.next = current.next;
+   }
+   return true;
+  }
+  prev = current;
+  current = current.next;
  }
  return false;
 }
 LinkedList.prototype.printHelper = function(list, result) {
  if (list.next == null) {
- result += list.value;
- return result;
+  result += list.value;
+  return result;
  }
  result += list.value + ',';
  return this.printHelper(list.next, result);
